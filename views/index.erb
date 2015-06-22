@@ -1,0 +1,14 @@
+<h1>Lucy and jack hack the web</h1>
+  <div style='border: 3px solid #333333'>
+    <% if @visitor %>
+      Hello, <%= @visitor %>!
+    <% else %>
+      <form action="/hello">
+        My name is <%= @name %>.
+        What's your name?
+        <input type="text" name="name">
+        <input type="submit" value="Submit">
+      </form>
+    <% end %>
+  <img src='/images/kitten.png'>
+</div>
